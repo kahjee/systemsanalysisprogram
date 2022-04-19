@@ -1,16 +1,20 @@
 from email.mime import application
 from tkinter import *
+from tkinter import ttk
 from datetime import *
+from datetime import datetime, timedelta
 import random
+import hotelDatabase
 
 class Hotel:
     def __init__(self, root):
         self.root = root
-        self.root.title("Hotel Management System")
-        self.root.geometry("1350x750+0+0")
-        self.root.config(background="white")
+        self.root.title("Hotel Database Management System")
+        self.root.geometry("1350x800+0+0")
 
-    if __name__ == '__main__':
-        root = Tk()
-        application = Hotel (root)
-        root.mainloop()
+        MainFrame = Frame(self.root).grid()
+
+        
+
+        pass
+
