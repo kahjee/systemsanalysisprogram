@@ -49,17 +49,20 @@ class Hotel:
         self.txtCustomerID = Label(LeftFrame, Font('Arial', 12, 'bold'), width=18)
         self.txtCustomerID.grid(row=0, column=1, padx=20, pady=3)
 
+
         self.lblCustomerLName = Label(LeftFrame, Font('Arial', 12, 'bold'), text="Customer Last Name:", padx=1)
         self.lblCustomerLName.grid(row=0, column=0, sticky=W)
 
         self.txtCustomerLName = Label(LeftFrame, Font('Arial', 12, 'bold'), width=18)
         self.txtCustomerLName.grid(row=0, column=1, padx=20, pady=3)
 
+
         self.lblCustomerFName = Label(LeftFrame, Font('Arial', 12, 'bold'), text="Customer First Name:", padx=1)
         self.lblCustomerFName.grid(row=0, column=0, sticky=W)
 
         self.txtCustomerFName = Label(LeftFrame, Font('Arial', 12, 'bold'), width=18)
         self.txtCustomerFName.grid(row=0, column=1, padx=20, pady=3)
+
 
         self.lblCustomerContact = Label(LeftFrame, Font('Arial', 12, 'bold'), text="Contact Number:", padx=1)
         self.lblCustomerContact.grid(row=0, column=0, sticky=W)
@@ -68,6 +71,14 @@ class Hotel:
         self.txtCustomerContact.grid(row=0, column=1, padx=20, pady=3)
 
 
+        self.lblCustomerCheckIn = Label(LeftFrame, Font('Arial', 12, 'bold'), text="Check In Date", padx=1)
+        self.lblCustomerCheckIn.grid(row=0, column=0, sticky=W)
+
+        self.txtCustomerCheckIn = Label(LeftFrame, Font('Arial', 12, 'bold'), width=18)
+        self.txtCustomerCheckIn.grid(row=0, column=1, padx=20, pady=3)
+
+
+        
         if __name__ == '__main__':
             root = Tk()
             application = Hotel (root)
