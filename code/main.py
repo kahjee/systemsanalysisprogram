@@ -14,7 +14,10 @@ class Hotel:
 
         MainFrame = Frame(self.root).grid()
 
-        
+        if __name__ == '__main__':
+            root = Tk()
+            application = Hotel (root)
+            root.mainloop
 
         pass
 
