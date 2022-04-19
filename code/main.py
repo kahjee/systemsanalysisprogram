@@ -1,9 +1,11 @@
+from cgitb import text
 from email.mime import application
 from tkinter import *
 from tkinter import ttk
 from datetime import *
 from datetime import datetime, timedelta
 import random
+from tkinter.font import Font
 import hotelDatabase
 
 class Hotel:
@@ -38,6 +40,14 @@ class Hotel:
 
         RightFrame3 = Frame(MainFrame, bd=5, width=800, height=550, padx=4, relief=RIDGE)
         RightFrame3.grid(row=3, column=3)
+
+        # Widgets for the program.
+
+        self.lblCustomerID = Label(LeftFrame, Font('Arial', 12, 'bold'), text="Customer ID:", padx=1)
+        self.lblCustomerID.grid(row=0, column=0, sticky=W)
+
+        self.txtCustomerID = Label(LeftFrame, Font('Arial', 12, 'bold'), width=18)
+        self.txtCustomerID.grid(row=0, column=1, padx=20, pady=3)
 
 
         if __name__ == '__main__':
