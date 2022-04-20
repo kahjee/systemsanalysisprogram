@@ -87,6 +87,12 @@ class Hotel:
         self.cboProveOfID ['value'] = (' ', 'Driver License', 'Passport', 'Student ID')
         self.cboProveOfID.current(0)
         self.cboProveOfID.grid(row=6, column=1, padx=2, pady=3)
+
+
+        self.lblLabel = Label(RightFrame1, font=('Arial', 12, 'bold'), text="Customer Ref\tFirst Name\tSurname\tAddress", padx=6, pady=10)
+        self.lblLabel.grid(row=0, column=0, columnspan=17)
+
+
         
         if __name__ == '__main__':
             root = Tk()
